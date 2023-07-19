@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT APPLICATION</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="person-selector"> <!-- SELECTING THE PERSON WHO IS CURRENTLY CHATTING-->
+        <button class="button person-selector-button active-person" id="archie-selector">Archie</button> <!--Person selection either Archie or Michael-->
+        <button class="button person-selector-button" id="michael-selector">Michael</button>
+
+    </div>
+    
+    <div class="chat-container">
+        <h2 class="chat-header">Archie chatting....</h2>
+
+
+    <div class="chat-messages">
+        
+        <div class="message blue-bg">
+            <div class="message sender">Archie</div>
+            <div class="message-text"> Hey Michael what's up?</div>
+            <div class="message-timestamp">00:47 AM</div>
+            
+        </div>
+
+        <div class="message gray-bg">
+            <div class="message sender">Michael</div>
+            <div class="message-text"> Not much just assignment and stuff, what about you?</div>
+            <div class="message-timestamp">00:54 AM</div>
+            
+            
+        </div>
+    </div>
+
+    <form class="chat-input-form">
+    <input type="text" class = "chat-input" required placeholder="Type here,Archie"/>
+    <button type="submit" class="button send-button" >Send</button>
+    </form>
+
+    <button class="button clear-chat-button">Clear Chat</button>
+   </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
